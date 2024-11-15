@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de Registro</title>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/SALUDVIDA-LOGO.jpg" type="image/x-icon">
+    <!--<link rel="icon" href="img/favicon.png" type="image/png">-->
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (incluye Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- SCRIPT -->
+<script type="text/javascript">
+    function validateForm() {
+        const firstName = document.getElementById("firstName").value;
+        const firstNameHelp = document.getElementById("firstNameHelp");
+        if (firstName.length < 3) {
+            firstNameHelp.innerHTML = "El nombre es requerido.";
+            return false;
+        } else {
+            firstNameHelp.innerHTML = "";
+        }
+
+        const lastName = document.getElementById("lastName").value;
+        const lastNameHelp = document.getElementById("lastNameHelp");
+        if (lastName.length < 3) {
+            lastNameHelp.innerHTML = "El apellido es requerido.";
+            return false;
+        } else {
+            lastNameHelp.innerHTML = "";
+        }
+
+        const email = document.getElementById("email").value;
+        const emailHelp = document.getElementById("emailHelp");
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailHelp.innerHTML = "Ingrese un correo electrónico válido.";
+            return false;
+        } else {
+            emailHelp.innerHTML = "";
+        }
+
+        const phone = document.getElementById("phone").value;
+        const phoneHelp = document.getElementById("phoneHelp");
+        const phonePattern = /^\d{9}$/;
+        if (!phonePattern.test(phone)) {
+            phoneHelp.innerHTML = "El número de teléfono debe tener 9 dígitos.";
+            return false;
+        } else {
+            phoneHelp.innerHTML = "";
+        }
+
+        const password = document.getElementById("password").value;
+        const passwordHelp = document.getElementById("passwordHelp");
+        const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        if (!passwordPattern.test(password)) {
+            passwordHelp.innerHTML = "La contraseña debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una minúscula y un número.";
+            return false;
+        } else {
+            passwordHelp.innerHTML = "";
+        }
+
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        const confirmPasswordHelp = document.getElementById("confirmPasswordHelp");
+        if (password !== confirmPassword) {
+            confirmPasswordHelp.innerHTML = "Las contraseñas no coinciden.";
+            return false;
+        } else {
+            confirmPasswordHelp.innerHTML = "";
+        }
+        return true;
+    }
+</script>
+
+
+<style type="text/css">
+    .hover-anim {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .hover-anim:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .hover-anim .bi {
+        transition: color 0
+    }
+
+    .hover-anim:hover .bi {
+        color: #053a70;
+    }
+
+    .bg-blue {
+        background-color: #053a70;
+    }
+
+    .bg-darkblue {
+        background-color: #102034;
+    }
+
+    .color-light {
+        color: #f8f9fa;
+    }
+
+    .color-light:hover {
+        color: #f8f9fa;
+    }
+
+    .card-title {
+        font-weight: bolder;
+    }
+
+    * {
+        font-family: "Heebo", sans-serif;
+        font-size: 17px;
+
+        /* FORM*/
+    }
+
+    body {
+
+        background-color: #f8f9fa;
+        /* Fondo claro */
+    }
+
+    h2 {
+        color: #007bff;
+        /* Azul LATAM */
+    }
+
+    .form-control:focus {
+        border-color: #007bff;
+        /* Bordes azul al enfocarse */
+        box-shadow: none;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .form-check-input {
+        font-weight: bold;
+    }
+
+    .form-check-label {
+        font-weight: bold;
+    }
+
+    /* OTHERS */
+
+    }
+
+    .nav-link {
+        color: #f8f9fa;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container-fluid {
+        padding: 0px;
+    }
+
+
+    .card {
+        background-color: #87CEEB;
+        /* Color celeste */
+        border: none;
+        /* Elimina el borde predeterminado de la tarjeta */
+    }
+
+    .card:hover {
+        background-color: #00BFFF;
+        /* Un color celeste más oscuro al pasar el mouse */
+    }
+
+    /* Estilo para el carrusel */
+    #slider-home {
+        height: 80vh;
+        /* Ajusta la altura del carrusel según tus necesidades */
+        overflow: hidden;
+        /* Oculta cualquier parte de la imagen que sobresalga */
+    }
+
+    #slider-home .carousel-item {
+        height: 100%;
+        /* Hace que cada item del carrusel ocupe el 100% de la altura del contenedor */
+    }
+
+    #slider-home .carousel-item img {
+        height: 100%;
+        /* Hace que la imagen ocupe toda la altura del item */
+        width: 100%;
+        /* Hace que la imagen ocupe toda la anchura del item */
+        object-fit: cover;
+        /* Mantiene la proporción de la imagen mientras llena el contenedor */
+    }
+
+
+    /* Sucursales */
+    .map-container {
+        text-align: center;
+        /* Centra el contenido del mapa */
+    }
+</style>
+
+
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-light">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-12">
+                    <a href="index.html">
+                        <img src="./assets/img/saludvida01.png" alt="Hospital Salud Vida" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- DIV -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Registro de Usuario</h2>
+        <form>
+            <!-- Nombre -->
+            <section class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card p-4 shadow">
+                            <h5 class="card-title text-center display-5 mb-4">Registrate</h5>
+                            <form action="" method="post" onsubmit="return validateForm()">
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">Nombre(s)</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Tu nombre">
+                                    <small id="firstNameHelp" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Apellido(s)</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Tu apellido">
+                                    <small id="lastNameHelp" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Ejemplo@dominio.com">
+                                    <small id="emailHelp" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="0 0000 0000">
+                                    <small id="phoneHelp" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                                    <small id="passwordHelp" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirma tu contraseña</label>
+                                    <input type="password" class="form-control" id="confirmPassword"
+                                        placeholder="Repite tu contraseña">
+                                    <small id="confirmPasswordHelp" class="text-danger"></small>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Botón de registro -->
+            <!--        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
+        </div>
+    </form>
+</div>
+-->
+
+            <!-- FOOTER -->
+            <div class="bg-darkblue py-3">
+                <ul class="list-unstyled d-flex justify-content-center mb-3">
+                    <li class="mx-2"><a href="https://facebook.com" target="_blank"><i
+                                class="bi bi-facebook text-light fs-4"></i></a></li>
+                    <li class="mx-2"><a href="https://wa.me/1234567890" target="_blank"><i
+                                class="bi bi-whatsapp text-light fs-4"></i></a></li>
+                    <li class="mx-2"><a href="https://instagram.com" target="_blank"><i
+                                class="bi bi-instagram text-light fs-4"></i></a></li>
+                    <li class="mx-2"><a href="https://linkedin.com" target="_blank"><i
+                                class="bi bi-linkedin text-light fs-4"></i></a></li>
+                    <li class="mx-2"><a href="https://youtube.com" target="_blank"><i
+                                class="bi bi-youtube text-light fs-4"></i></a></li>
+                </ul>
+                <div class="text-light text-center">
+                    <span>© 2024 Hospital Salud Vida | Todos los derechos reservados</span>
+                </div>
+            </div>
+
+
+            <!-- Bootstrap JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

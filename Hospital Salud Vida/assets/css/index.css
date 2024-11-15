@@ -1,0 +1,412 @@
+.hover-anim {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hover-anim:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover-anim .bi {
+  transition: color 0
+}
+
+.hover-anim:hover .bi {
+  color: #053a70;
+}
+
+.bg-blue {
+  background-color: #053a70;
+}
+
+.bg-darkblue {
+  background-color: #102034;
+}
+
+.color-light {
+  color: #f8f9fa;
+}
+
+.color-light:hover {
+  color: #f8f9fa;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+
+* {
+  font-family: "Heebo", sans-serif;
+  font-size: 17px;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+
+.card {
+  background-color: #87CEEB;
+  /*#87CEEB;+/ /* Color celeste */
+  border: none;
+  /* Elimina el borde predeterminado de la tarjeta */
+}
+
+.card:hover {
+  background-color: #4169E1;
+  /*#4169E1 ;*/
+  /* Un color celeste más oscuro al pasar el mouse */
+}
+
+/* Estilo para el carrusel */
+/* Hacer que el carrusel ocupe toda la pantalla en altura en todos los dispositivos */
+#slider-home .carousel-item {
+  height: 100vh; /* Ajusta la altura del carrusel al 100% de la altura de la ventana */
+}
+
+/* Asegurarse de que la imagen se ajuste sin recortar en distintos tamaños de pantalla */
+#slider-home .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre el área sin distorsión */
+}
+
+/* Ajuste para las leyendas y textos en el carrusel */
+#slider-home .carousel-caption {
+  bottom: 20%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente para mejor legibilidad */
+  border-radius: 8px;
+}
+
+#slider-home .carousel-caption h1 {
+  font-size: 2.5rem; /* Tamaño de texto ajustado para dispositivos móviles */
+}
+
+@media (min-width: 768px) {
+  #slider-home .carousel-caption h1 {
+    font-size: 3.5rem; /* Tamaño de texto más grande para pantallas medianas */
+  }
+}
+
+@media (min-width: 1200px) {
+  #slider-home .carousel-caption h1 {
+    font-size: 4.5rem; /* Tamaño de texto para pantallas grandes */
+  }
+}
+
+
+/* Sucursales */
+.map-container {
+  text-align: center;
+  /* Centra el contenido del mapa */
+}
+
+/*H-IMG*/
+.icon-img {
+  width: 100px;
+  /* Ajuste del tamaño */
+  height: 100px;
+}
+
+/* Color inicial de los enlaces */
+#services .card {
+  background-color: #87CEEB; /*#87CEEB;*/
+  /*#87CEFA;*/
+  /* Azul claro */
+  transition: background-color 0.3s ease;
+}
+
+/* Color al pasar el cursor */
+#services .card:hover {
+  background-color: #00BFFF;    /*#00BFFF #007bff;*/
+    /* Azul Oscuro */
+}
+
+/* CARDS */
+/* Ajustes adicionales para iconos e imagenes */
+#services .card-body h2 {
+  color: #180e75;
+  /* Puedes ajustar 
+  el color del texto si es necesario */
+}
+
+/* Tamaño de fuente predeterminado para pantallas grandes */
+h2 {
+  font-size: 2rem; /* Tamaño de fuente para pantallas grandes */
+}
+
+/* Ajuste del tamaño de la fuente en tablets y pantallas medianas */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1rem; /* Tamaño de fuente más pequeño para tablets */
+  }
+}
+
+/* Ajuste del tamaño de la fuente en dispositivos móviles */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 0.5rem; /* Tamaño de fuente más pequeño para dispositivos móviles */
+  }
+}
+
+
+/*Header Section*/
+
+/*   .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-right: 1px solid #ccc;
+        z-index: 1000; 
+    }
+    .content {
+        margin-left: 250px; 
+    }
+
+  */
+/* Tamaño predeterminado para pantallas grandes */
+#dropdownMenuButton {
+  font-size: 1.5rem; /* Botón de hamburguesa de tamaño medio */
+}
+
+.btn {
+  padding: 0.5rem 1rem; /* Botón 'Acceder' de tamaño estándar */
+}
+
+/* En dispositivos pequeños, reducimos el tamaño del botón de hamburguesa y el botón 'Acceder' */
+@media (max-width: 768px) {
+  #dropdownMenuButton {
+    font-size: 1.2rem; /* Reducir el tamaño del ícono del menú hamburguesa */
+  }
+
+  .btn {
+    font-size: 0.9rem; /* Reducir el tamaño del texto del botón 'Acceder' */
+    padding: 0.4rem 0.8rem; /* Reducir el padding */
+  }
+
+  /* Aseguramos que el logo y el menú se adapten a pantallas más pequeñas */
+  .container-fluid {
+    padding: 0.5rem; /* Reducir el padding para dispositivos pequeños */
+  }
+}
+
+/* Para pantallas de móviles muy pequeños */
+@media (max-width: 576px) {
+  #dropdownMenuButton {
+    font-size: 1rem; /* Aún más pequeño en pantallas muy pequeñas */
+  }
+
+  .btn {
+    font-size: 0.8rem; /* Aún más pequeño en pantallas muy pequeñas */
+    padding: 0.3rem 0.6rem; /* Ajustar aún más el padding */
+  }
+
+  .img-fluid {
+    width: 80%; /* Reducir el tamaño del logo */
+  }
+}
+  
+
+.dropdown-menu {
+  background-color: #1764a7;
+  /* Cambiar a un color secundario */
+  border: none;
+  /* Opcional: quitar borde */
+}
+
+.dropdown-item {
+  color: #00BFFF;
+  /* Cambia el color del texto de los ítems a blanco */
+}
+
+.dropdown-item:hover {
+  color: #00BFFF;
+  /* Color del texto al pasar el ratón */
+  background-color: rgba(0, 86, 179, 0.7);
+  /* Color de fondo al pasar el ratón (semi-transparente) */
+}
+
+.dropdown-item:focus {
+  color: rgb(7, 131, 198);
+  /* Color del texto al hacer foco */
+  background-color: rgba(0, 86, 179, 0.7);
+  /* Color de fondo al hacer foco (semi-transparente) */
+}
+
+
+/*SMAP*/
+/* Color de los enlaces en su estado normal */
+footer a.nav-link {
+  color: white;
+  /* Texto blanco */
+  text-decoration: none;
+  /* Quitar subrayado */
+}
+
+/* Color de los enlaces al pasar el cursor */
+footer a.nav-link:hover {
+  color: #0d6efd;
+  /* Cambio este valor al color preferido al hacer hover */
+}
+
+/* OTHER MOD  */
+/* Carousel */
+.carousel-item::after {
+  color: white;
+}
+
+.carousel-caption,
+.carousel-img {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  top: 0;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+.carousel-caption a {
+  position: relative;
+  z-index: 10;
+}
+
+/* H1 */
+#services-title {
+  color: #0750a3;
+  /* Azul LATAM */
+}
+
+/* MSG */
+/* hnosotros */
+/* En pantallas pequeñas, ajustamos los títulos y el tamaño de las imágenes */
+@media (max-width: 768px) {
+  .card-title {
+      font-size: 1.25rem; /* Reducir tamaño del título */
+  }
+
+  .card-text {
+      font-size: 0.9rem; /* Reducir tamaño del texto */
+  }
+
+  .card-img-top {
+      width: 100%; /* Asegurar que la imagen ocupe todo el espacio disponible */
+      height: auto;
+  }
+
+  .btn {
+      font-size: 0.8rem; /* Reducir tamaño del texto en el botón */
+      padding: 0.4rem 0.8rem; /* Reducir el padding del botón */
+  }
+}
+
+
+
+.toplayer-inline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  height: 100vh;
+  color: white;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+#banner-interior {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.borde img {
+  width: 100%;
+}
+
+#botonera-home .flex {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flex a img {
+  width: 100%;
+  max-width: 180px;
+}
+
+.over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.flex a:hover .over {
+  opacity: 1;
+}
+
+/* INDEX PAD */
+
+/* Reduce el margen entre los artículos en la sección de contacto */
+#services .row > article {
+  padding: 0; /* Elimina padding interno */
+  margin: 0.5rem; /* Reduce margen entre artículos */
+}
+
+/* Ajusta el margen entre las imágenes del carrusel */
+.carousel-item {
+  margin-bottom: 0; /* Asegura que no haya margen inferior */
+}
+
+.carousel-inner {
+  gap: 0.5rem; /* Espacio mínimo entre elementos del carrusel */
+}
+
+/* Ajusta el pie de página para reducir espacio entre columnas */
+footer .col {
+  margin: 0.5rem 0; /* Reduce el margen entre columnas */
+}
+
+footer .row {
+  gap: 1rem; /* Ajusta el espacio entre columnas */
+}
+
+/* Espacio entre secciones generales */
+section {
+  padding-top: 1rem; /* Menor espacio superior entre secciones */
+  padding-bottom: 1rem; /* Menor espacio inferior entre secciones */
+}

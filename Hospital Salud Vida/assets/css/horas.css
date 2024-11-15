@@ -1,0 +1,143 @@
+.hover-anim {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hover-anim:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover-anim .bi {
+  transition: color 0
+}
+
+.hover-anim:hover .bi {
+  color: #053a70;
+}
+
+.bg-blue {
+  background-color: #053a70;
+}
+
+.bg-darkblue {
+  background-color: #102034;
+}
+
+.color-light {
+  color: #f8f9fa;
+}
+
+.color-light:hover {
+  color: #f8f9fa;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+
+* {
+  font-family: "Heebo", sans-serif;
+  font-size: 17px;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.nav-link {
+  color: #f8f9fa;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+
+.card {
+  background-color: #87CEEB;
+  /* Color celeste */
+  border: none;
+  /* Elimina el borde predeterminado de la tarjeta */
+}
+
+.card:hover {
+  background-color: #00BFFF;
+  /* Un color celeste más oscuro al pasar el mouse */
+}
+
+/* Estilo para el carrusel */
+#slider-home {
+  height: 80vh;
+  /* Ajusta la altura del carrusel según tus necesidades */
+  overflow: hidden;
+  /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+#slider-home .carousel-item {
+  height: 100%;
+  /* Hace que cada item del carrusel ocupe el 100% de la altura del contenedor */
+}
+
+#slider-home .carousel-item img {
+  height: 100%;
+  /* Hace que la imagen ocupe toda la altura del item */
+  width: 100%;
+  /* Hace que la imagen ocupe toda la anchura del item */
+  object-fit: cover;
+  /* Mantiene la proporción de la imagen mientras llena el contenedor */
+}
+
+
+/* Sucursales */
+.map-container {
+  text-align: center;
+  /* Centra el contenido del mapa */
+}
+
+/* Estilos para el footer fijo */
+.footer-fijo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d6efd;
+  /* o usa tu color personalizado */
+  color: white;
+  z-index: 1000;
+}
+
+
+
+/*H-IMG*/
+.icon-img {
+  width: 100px;
+  /* Ajuste del tamaño */
+  height: 100px;
+}
+
+
+/* MOD FOOTER*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

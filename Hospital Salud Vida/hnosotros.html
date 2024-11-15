@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nosotros</title>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/SALUDVIDA-LOGO.jpg" type="image/x-icon">
+    <!--<link rel="icon" href="img/favicon.png" type="image/png">-->
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (incluye Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/hnosotros.css">
+
+<!--Acciones con Js-->
+<script src="assets/js/hnosotros.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="bg-light">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-12">
+                    <a href="index.html">
+                        <img src="./assets/img/saludvida01.png" alt="Hospital Salud Vida" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Hospital Salud Vida</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#about">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- DIV-->
+    <!-- Mensaje -->
+    <div class="toplayer-inline" id="mensaje">
+        <div class="wrap-login text-center">
+            <div class="form-group logo">
+                <img src="./assets/img/saludvida01.png" alt="HospitalSaludVida" class="img-fluid"
+                    onclick="cerrarMensaje()">
+            </div>
+            <div class="msgbienvenida">
+                <!-- Agregar título si es necesario -->
+            </div>
+            <p>Bienvenid@</p>
+        </div>
+    </div>
+    <!-- Fin de mensaje -->
+
+
+    <!-- Banner Interior -->
+    <section id="banner-interior" style="background-image:url('./assets/img/header-hospital.jpg');">
+        <div class="container text-center">
+            <h1>Nosotros</h1>
+        </div>
+        <div class="borde">
+            <img src="./assets/img/header-hospital.jpg" alt="Separación" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Botonera Home -->
+    <section id="botonera-home" class="d-none d-md-block">
+        <div class="container">
+            <div class="flex">
+                <a href="horas.html" class="position-relative">
+                    <img src="./assets/img/calendar.png" alt="Reserva tu Hora" class="img-fluid">
+                    <div class="over"></div>
+                </a>
+                <a href="consultas.html" class="position-relative">
+                    <img src="./assets/img/person.png" alt="Resultado de Exámenes" class="img-fluid">
+                    <div class="over"></div>
+                </a>
+                <a href="presupuestos.html" class="position-relative">
+                    <img src="./assets/img/dollar.png" alt="Presupuestos" class="img-fluid">
+                    <div class="over"></div>
+                </a>
+                <a href="equipomedico.html" class="position-relative">
+                    <img src="./assets/img/equipomedico.png" alt="Busca tu Médico" class="img-fluid">
+                    <div class="over"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- Hero Section -->
+<section id="home" class="hero bg-primary text-white text-center p-5">
+    <div class="container">
+        <h1 id="services-title" class="display-4 text-center fw-bold">Bienvenidos a Hospital Salud Vida</h1>
+        <p class="lead">Comprometidos con tu salud y bienestar</p>
+        <a href="servicios.html" class="btn btn-light mt-3 fw-bold">Nuestros Servicios</a>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold">Quiénes Somos</h2>
+            <p class="text-center lead fw-bold">Nuestra Hospital está dedicado a ofrecer servicios médicos de alta
+                calidad.</p>
+            <div class="row mt-4">
+                <div class="col-md-6 fw-bold">
+                    <p>Con años de experiencia, nuestro equipo de profesionales está comprometido a brindar un servicio
+                        personalizado a cada paciente.</p>
+                </div>
+                <div class="col-md-6 fw-bold">
+                    <p>Estamos equipados con la última tecnología para garantizar diagnósticos y tratamientos eficaces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+<section id="nosotros" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold">Nosotros</h2>
+        <div class="row mt-4">
+            <!-- Misión y Visión -->
+            <div class="col-md-4">
+                <div class="card mb-4 hover-anim">
+                    <img src="./assets/img/misionvision.jpg" class="card-img-top" alt="Misión y Visión">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Misión y Visión</h5>
+                        <p class="card-text"><strong>Misión:</strong> Ayudar a las personas a llevar vidas más saludables y a que el sistema de Salud funcione mejor para todos.</p>
+                        <p class="card-text"><strong>Visión:</strong> Ser el mejor Hospital del Sur de Chile</p>
+                        <a href="#" class="btn btn-primary">+ MÁS INFO</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Valores -->
+            <div class="col-md-4">
+                <div class="card mb-4 hover-anim">
+                    <img src="./assets/img/valores.jpg" class="card-img-top" alt="Valores">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Valores</h5>
+                        <p class="card-text"><strong>Integridad</strong></p>
+                        <p class="card-text"><strong>Compasión</strong></p>
+                        <p class="card-text"><strong>Relaciones</strong></p>
+                        <p class="card-text"><strong>Innovación</strong></p>
+                        <p class="card-text"><strong>Desempeño</strong></p>
+                        <p class="card-text"><strong>Empatía</strong></p>
+                        <a href="#" class="btn btn-primary">+ MÁS INFO</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Administración -->
+            <div class="col-md-4">
+                <div class="card mb-4 hover-anim">
+                    <img src="./assets/img/administracion.jpg" class="card-img-top" alt="Administración">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Administración</h5>
+                        <p class="card-text"><strong>Director</strong></p>
+                        <p class="card-text"><strong>Subdirector Médico y Administrativo</strong></p>
+                        <p class="card-text"><strong>Subdirector Gestión del Cuidado</strong></p>
+                        <p class="card-text"><strong>Subdirector Gestión y Personal</strong></p>
+                        <a href="#" class="btn btn-primary">+ MÁS INFO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5">
+        <div class="container bg-info">
+            <h2 class="text-center">Contacto</h2>
+            <p class="text-center lead">¿Tienes alguna consulta? Contáctanos</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Dirección</h5>
+                    <p>123 Avenida Salud, Concepción, Chile</p>
+                    <h5>Teléfono</h5>
+                    <p>(+56) 2 1234 5678</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="bg-darkblue py-3">
+        <ul class="list-unstyled d-flex justify-content-center mb-3">
+            <li class="mx-2"><a href="https://facebook.com" target="_blank"><i
+                        class="bi bi-facebook text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://wa.me/1234567890" target="_blank"><i
+                        class="bi bi-whatsapp text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://instagram.com" target="_blank"><i
+                        class="bi bi-instagram text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://linkedin.com" target="_blank"><i
+                        class="bi bi-linkedin text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://youtube.com" target="_blank"><i
+                        class="bi bi-youtube text-light fs-4"></i></a></li>
+        </ul>
+        <div class="text-light text-center">
+            <span>© 2024 Hospital Salud Vida | Todos los derechos reservados</span>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>

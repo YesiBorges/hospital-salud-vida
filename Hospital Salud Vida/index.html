@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hospital Salud Vida: Comprometidos con la salud de nuestros pacientes.">
+    <meta name="author" content="Hospital Salud Vida">
+    <title>Hospital Salud Vida</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/SALUDVIDA-LOGO.jpg" type="image/x-icon">
+    <!--<link rel="icon" href="img/favicon.png" type="image/png">-->
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (incluye Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/index.css">
+
+<!--Acciones con Js-->
+<script src="assets/js/index.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Mensaje -->
+    <div class="toplayer-inline" id="mensaje">
+        <div class="wrap-login text-center">
+            <div class="form-group logo">
+                <img src="./assets/img/saludvida01.png" alt="HospitalSaludVida" class="img-fluid"
+                    onclick="cerrarMensaje()">
+            </div>
+            <div class="msgbienvenida">
+                <!-- Agregar título si es necesario -->
+            </div>
+            <p>Bienvenid@</p>
+        </div>
+    </div>
+    <!-- Fin de mensaje -->
+
+    <!-- Header Section -->
+    <header class="bg-light">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Logo -->
+                        <a href="index.html" class="d-block">
+                            <img src="./assets/img/saludvida01.png" alt="Hospital Salud Vida" class="img-fluid w-100">
+                        </a>
+
+                        <!-- Menú de hamburguesa y botón "Acceder" -->
+                        <div class="d-flex align-items-center" style="position: absolute; top: 10px; right: 10px;">
+                            <!-- Botón de hamburguesa -->
+                            <button class="btn btn-secondary me-2" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-list"></i> <!-- Icono de hamburguesa -->
+                            </button>
+
+                            <!-- Botón Acceder -->
+                            <a href="registro.html" class="btn btn-light fw-bold">Acceder</a>
+                        </div>
+
+                        <!-- Menú desplegable -->
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item fw-bold text-center" href="horas.html">Agenda tu Hora</a>
+                            <a class="dropdown-item fw-bold text-center" href="presupuestos.html">Presupuestos</a>
+                            <a class="dropdown-item fw-bold text-center" href="equipomedico.html">Médicos y Especialidades</a>
+                            <a class="dropdown-item fw-bold text-center" href="servicios.html">Servicios</a>
+                            <a class="dropdown-item fw-bold text-center" href="consultas.html">Consultas</a>
+                            <a class="dropdown-item fw-bold text-center" href="contactos.html">Contactos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="py-5">
+        <div class="container-fluid" id="services">
+            <div class="row d-flex justify-content-center row-gap-4 col-gap-2 py-1">
+                <div class="col-md-4">
+                    <a href="horas.html" class="card hover-anim h-100">
+                        <div class="card-body justify-content-between">
+                            <img src="./assets/img/calendar.png" class="icon-img" alt="Agenda tu Hora">
+                            <h2 class="fs-4 fw-bold">Agenda tu Hora</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="presupuestos.html" class="card hover-anim h-100">
+                        <div class="card-body justify-content-between">
+                            <img src="./assets/img/dollar.png" class="icon-img" alt="Presupuestos">
+                            <h2 class="fs-4 fw-bold">Presupuestos</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="equipomedico.html" class="card hover-anim h-100">
+                        <div class="card-body justify-content-between">
+                            <img src="./assets/img/equipomedico.png" class="icon-img" alt="Médicos y Especialidades">
+                            <h2 class="fs-4 fw-bold">Médicos y Especialidades</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="servicios.html" class="card hover-anim h-100">
+                        <div class="card-body justify-content-between">
+                            <img src="./assets/img/medkit.png" class="icon-img" alt="Servicios">
+                            <h2 class="fs-4 fw-bold">Servicios</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="consultas.html" class="card hover-anim h-100">
+                        <div class="card-body justify-content-between">
+                            <img src="./assets/img/person.png" class="icon-img" alt="Consultas">
+                            <h2 class="fs-4 fw-bold">Consultas</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="contactos.html" class="card hover-anim h-100">
+                        <div class="card-body justify-content-between">
+                            <img src="./assets/img/telephone.png" class="icon-img" alt="Contactanos">
+                            <h2 class="fs-4 fw-bold">Contacto</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Slider Section (CAROUSEL)-->
+    <section id="slider-home">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="3000">
+            <div class="carousel-inner">
+                <!-- Primera imagen del carrusel -->
+                <div class="carousel-item active">
+                    <img src="./assets/img/Urgencias24h.jpg" class="d-block w-100" alt="Urgencias">
+                    <div
+                        class="carousel-caption d-flex flex-column justify-content-center align-items-center text-lg-start w-100 start-0">
+                        <div class="col-lg-7 p-3 p-md-5">
+                            <h1 class="display-1 fw-bold text-center text-md-start">Urgencias 24 Horas</h1>
+                            <p class="text-center text-md-start">Servicio de atención de urgencias disponible las 24
+                                horas para asistir a nuestros pacientes en momentos críticos.</p>
+                            <!-- Nuevo botón centrado -->
+                            <p class="text-center"><a class="btn btn-light" href="servicios.html">Accede aquí</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda imagen del carrusel -->
+                <div class="carousel-item">
+                    <img src="./assets/img/Cirugias01.jpg" class="d-block w-100" alt="Cirugías">
+                    <div
+                        class="carousel-caption d-flex flex-column justify-content-center align-items-center text-lg-start w-100 start-0">
+                        <div class="col-lg-7 p-3 p-md-5">
+                            <h1 class="display-1 fw-bold text-center text-md-start">Cirugías Especializadas</h1>
+                            <p class="text-center text-md-start">Nuestros especialistas brindan atención quirúrgica de
+                                alta calidad, asegurando un proceso seguro y profesional.</p>
+                            <!-- Nuevo botón centrado -->
+                            <p class="text-center"><a class="btn btn-light" href="servicios.html"
+                                    target="_blank">Descubre más</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tercera imagen del carrusel -->
+                <div class="carousel-item">
+                    <img src="./assets/img/Hospitalizacion01.jpg" class="d-block w-100" alt="Hospitalización">
+                    <div
+                        class="carousel-caption d-flex flex-column justify-content-center align-items-center text-lg-start w-100 start-0">
+                        <div class="col-lg-7 p-3 p-md-5">
+                            <h1 class="display-1 fw-bold text-center text-md-start">Servicio de Hospitalización</h1>
+                            <p class="text-center text-md-start">Instalaciones cómodas y equipadas para ofrecer el mejor
+                                cuidado a nuestros pacientes hospitalizados.</p>
+                            <!-- Nuevo botón centrado -->
+                            <p class="text-center"><a class="btn btn-light" href="servicios.html" target="_blank">Más
+                                    detalles</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cuarta imagen del carrusel -->
+                <div class="carousel-item">
+                    <img src="./assets/img/ConsultaExterna01.jpg" class="d-block w-100" alt="Consulta Externa">
+                    <div
+                        class="carousel-caption d-flex flex-column justify-content-center align-items-center text-lg-start w-100 start-0">
+                        <div class="col-lg-7 p-3 p-md-5">
+                            <h1 class="display-1 fw-bold text-center text-md-start">Consulta Externa</h1>
+                            <p class="text-center text-md-start">Atención médica ambulatoria de diversas especialidades
+                                para el cuidado integral de la salud.</p>
+                            <!-- Nuevo botón centrado -->
+                            <p class="text-center"><a class="btn btn-light" href="servicios.html"
+                                    target="_blank">Consulta ahora</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="container-fluid py-3 text-center" id="services" aria-labelledby="services-title">
+        <h1 id="services-title" class="display-4 text-center fw-bold">Contáctanos</h1>
+        <div class="text-center row d-flex justify-content-center row-gap-4 p-3">
+            <!-- Sección de Teléfono -->
+            <article class="col-md-3 col-sm-6">
+                <a href="contactos.html" class="card hover-anim h-100">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <!-- Imagen como ícono de teléfono -->
+                        <img src="./assets/img/telephone01.png" class="icon-img mb-3" alt="Teléfono">
+                        <h2 class="fs-4 fw-bold">Teléfono</h2>
+                        <p class="card-text fw-bold">41 2 222 222</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Sección de Correo Electrónico -->
+            <article class="col-md-3 col-sm-6">
+                <a href="mailto:saludvida@concepcion.cl" class="card hover-anim h-100">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <!-- Imagen como ícono de correo electrónico -->
+                        <img src="./assets/img/email01.png" class="icon-img mb-3" alt="Correo Electrónico">
+                        <h2 class="fs-4 fw-bold">Correo Electrónico</h2>
+                        <p class="card-text fw-bold">saludvida@ccp.cl</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+
+    <!--CONTACTOS (SUCURSALES) -->
+    <section>
+        <div class="container-fluid bg-blue">
+            <footer>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 gap-2">
+                    <div class="col d-flex justify-content-center">
+                        <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                            <img class="rounded" src="#" alt="" width="160">
+                        </a>
+                    </div>
+
+                    <div class="col ms-2">
+                        <h5 class="text-light fw-bold fs-2">Sobre nosotros</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="hnosotros.html#nosotros" class="nav-link p-0">Misión y
+                                    visión</a></li>
+                            <li class="nav-item mb-2"><a href="hnosotros.html#nosotros" class="nav-link p-0">Valores</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="hnosotros.html#nosotros"
+                                    class="nav-link p-0">Administración</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col ms-2">
+                        <h5 class="text-light fw-bold fs-2">Sucursales</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"
+                                    onclick="showMap(event, 'vina')">Viña del Mar</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"
+                                    onclick="showMap(event, 'curico')">Curicó</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"
+                                    onclick="showMap(event, 'talca')">Talca</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"
+                                    onclick="showMap(event, 'conce')">Concepción</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"
+                                    onclick="showMap(event, 'losangeles')">Los Ángeles</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col ms-2">
+                        <h5 class="text-light fw-bold fs-2">Mapa de Sucursales</h5>
+                        <div id="mapContainer" class="map-container">
+                            <div id="mapIframe" style="display: none;">
+                                <iframe id="mapFrame" width="300" height="250" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+
+
+    <div class="bg-darkblue py-3">
+        <ul class="list-unstyled d-flex justify-content-center mb-3">
+            <li class="mx-2"><a href="https://facebook.com" target="_blank"><i
+                        class="bi bi-facebook text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://wa.me/1234567890" target="_blank"><i
+                        class="bi bi-whatsapp text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://instagram.com" target="_blank"><i
+                        class="bi bi-instagram text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://linkedin.com" target="_blank"><i
+                        class="bi bi-linkedin text-light fs-4"></i></a></li>
+            <li class="mx-2"><a href="https://youtube.com" target="_blank"><i
+                        class="bi bi-youtube text-light fs-4"></i></a></li>
+
+        </ul>
+        <div class="text-light text-center">
+            <span>© 2024 Hospital Salud Vida | Todos los derechos reservados</span>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optional: Slick Slider JavaScript if you want to add sliding effects -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+    <!--  <script>
+        $('.slider-desktop').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    </script>
+-->
+
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+.hover-anim {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hover-anim:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover-anim .bi {
+  transition: color 0
+}
+
+.hover-anim:hover .bi {
+  color: #053a70;
+}
+
+.bg-blue {
+  background-color: #053a70;
+}
+
+.bg-darkblue {
+  background-color: #102034;
+}
+
+.color-light {
+  color: #f8f9fa;
+}
+
+.color-light:hover {
+  color: #f8f9fa;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+
+* {
+  font-family: "Heebo", sans-serif;
+  font-size: 17px;
+
+
+  /* FORM*/
+}
+
+body {
+
+  background-color: #f8f9fa;
+  /* Fondo claro */
+}
+
+h2 {
+  color: #007bff;
+  /* Azul LATAM */
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  /* Bordes azul al enfocarse */
+  box-shadow: none;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-check-input {
+  font-weight: bold;
+}
+
+.form-check-label {
+  font-weight: bold;
+}
+
+
+.nav-link {
+  color: #f8f9fa;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+
+.card {
+  background-color: #87CEEB;
+  /* Color celeste */
+  border: none;
+  /* Elimina el borde predeterminado de la tarjeta */
+}
+
+.card:hover {
+  background-color: #00BFFF;
+  /* Un color celeste más oscuro al pasar el mouse */
+}
+
+/* Estilo para el carrusel */
+#slider-home {
+  height: 80vh;
+  /* Ajusta la altura del carrusel según tus necesidades */
+  overflow: hidden;
+  /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+#slider-home .carousel-item {
+  height: 100%;
+  /* Hace que cada item del carrusel ocupe el 100% de la altura del contenedor */
+}
+
+#slider-home .carousel-item img {
+  height: 100%;
+  /* Hace que la imagen ocupe toda la altura del item */
+  width: 100%;
+  /* Hace que la imagen ocupe toda la anchura del item */
+  object-fit: cover;
+  /* Mantiene la proporción de la imagen mientras llena el contenedor */
+}
+
+
+/* Sucursales */
+.map-container {
+  text-align: center;
+  /* Centra el contenido del mapa */
+}
